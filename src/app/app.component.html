@@ -1,44 +1,83 @@
 <div class="row" style="position: relative;">
     <img src="assets/background.png" style="position: absolute; z-index: -1">
-    <img src="assets/drawings/andromeia.png" style="position: absolute; z-index: 0">
+    <img src="assets/drawings/andromeia_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booAndromeia">
+    <img src="assets/drawings/antisora99_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booAntisora99">
+    <img src="assets/drawings/aswraith_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booAswraith">
+    <img src="assets/drawings/drewzerr_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booDrewzerr">
+    <img src="assets/drawings/dumberto_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booDumberto">
+    <img src="assets/drawings/dumbertoRandom_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booDumbertoRandom">
+    <img src="assets/drawings/eskimo_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booEskimo">
+    <img src="assets/drawings/giucci_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booGiucci">
+    <img src="assets/drawings/godspath_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booGodspath">
+    <img src="assets/drawings/hermitknob_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booHermitknob">
+    <img src="assets/drawings/hermitknobRandom_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booHermitknobRandom">
+    <img src="assets/drawings/heyitssunny_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booHeyitssunny">
+    <img src="assets/drawings/imsteven_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booImSteven">
+    <img src="assets/drawings/instablade_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booInstablade">
+    <img src="assets/drawings/jenntart_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booJenntart">
+    <img src="assets/drawings/jesses_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booJesses">
+    <img src="assets/drawings/julian_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booJulian">
+    <img src="assets/drawings/muito_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booMuito">
+    <img src="assets/drawings/ogjoseph_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booOgjoseph">
+    <img src="assets/drawings/ovanilla_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booOvanilla">
+    <img src="assets/drawings/popyzera_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booPopyzera">
+    <img src="assets/drawings/questi_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booQuesti">
+    <img src="assets/drawings/slain_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booSlain">
+    <img src="assets/drawings/smoovesaiyan_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booSmooveSaiyan">
+    <img src="assets/drawings/spiritmoon_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booSpiritmoon">
+    <img src="assets/drawings/summerskin_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booSummerskin">
+    <img src="assets/drawings/tiffie44_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booTiffie44">
+    <img src="assets/drawings/titanium_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booTitanium">
+    <img src="assets/drawings/zull_Thumbnail.png" style="position: absolute; z-index: 0" *ngIf="booZull">
     <img src="assets/divider.png" style="position: absolute; z-index: 1">
+    <img src="assets/icons/icon_Archer.png" style="z-index:2; position: absolute; left:65px; top: 991px" *ngIf="booArcher">
+    <img src="assets/icons/icon_Mage.png" style="z-index:2; position: absolute; left:65px; top: 991px" *ngIf="booMage">
+    <img src="assets/icons/icon_Pirate.png" style="z-index:2; position: absolute; left:65px; top: 991px" *ngIf="booPirate">
+    <img src="assets/icons/icon_Thief.png" style="z-index:2; position: absolute; left:65px; top: 991px" *ngIf="booThief">
+    <img src="assets/icons/icon_Warrior.png" style="z-index:2; position: absolute; left:65px; top: 991px" *ngIf="booWarrior">
+    <img src="assets/icons/concernedpolitoed.png" style="z-index:2; position: absolute; left:65px; top: 991px" *ngIf="booPolitoed">
+
     <div style="position:absolute; left: 840px; top: 90px; z-index:2" class="">
-        <img src="assets/thumbnails/andromeia_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/antisora99_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/aswraith_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/drewzerr_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/dumberto_Thumbnail.png" class="hoverBorder">
+        <img src="assets/thumbnails/andromeia_Thumbnail.png" class="hoverBorder" (click)="pressedAndromeia()">
+        <img src="assets/thumbnails/antisora99_Thumbnail.png" class="hoverBorder" (click)="pressedAntisora99()">
+        <img src="assets/thumbnails/aswraith_Thumbnail.png" class="hoverBorder" (click)="pressedAswraith()">
+        <img src="assets/thumbnails/drewzerr_Thumbnail.png" class="hoverBorder" (click)="pressedDrewzerr()">
+        <img src="assets/thumbnails/dumberto_Thumbnail.png" class="hoverBorder" (click)="pressedDumberto()">
     </div>
     <div style="position:absolute; left: 924px; top: 254px; z-index:2" class="">
-        <img src="assets/thumbnails/eskimo_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/giucci_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/godspath_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/hermitnobb_Thumbnail.png" class="hoverBorder">
+        <img src="assets/thumbnails/eskimo_Thumbnail.png" class="hoverBorder" (click)="pressedEskimo()">
+        <img src="assets/thumbnails/giucci_Thumbnail.png" class="hoverBorder" (click)="pressedGiucci()">
+        <img src="assets/thumbnails/godspath_Thumbnail.png" class="hoverBorder" (click)="pressedGodspath()">
+        <img src="assets/thumbnails/hermitnobb_Thumbnail.png" class="hoverBorder" (click)="pressedHermitnobb()">
     </div>
     <div style="position:absolute; left: 840px; top: 418px;  z-index:2" class="">
-        <img src="assets/thumbnails/heyitssunny_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/imsteven_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/instablade_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/jenntart_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/jesses_Thumbnail.png" class="hoverBorder">
+        <img src="assets/thumbnails/heyitssunny_Thumbnail.png" class="hoverBorder" (click)="pressedHeyitssunny()">
+        <img src="assets/thumbnails/imsteven_Thumbnail.png" class="hoverBorder" (click)="pressedImsteven()">
+        <img src="assets/thumbnails/instablade_Thumbnail.png" class="hoverBorder" (click)="pressedInstablade()">
+        <img src="assets/thumbnails/jenntart_Thumbnail.png" class="hoverBorder" (click)="pressedJenntart()">
+        <img src="assets/thumbnails/jesses_Thumbnail.png" class="hoverBorder" (click)="pressedJesses()">
     </div>
     <div style="position:absolute; left: 924px; top: 582px;  z-index:2" class="">
-        <img src="assets/thumbnails/julian_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/muito_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/ogjoseph_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/ovanilla_Thumbnail.png" class="hoverBorder">
+        <img src="assets/thumbnails/julian_Thumbnail.png" class="hoverBorder" (click)="pressedJulian()">
+        <img src="assets/thumbnails/muito_Thumbnail.png" class="hoverBorder" (click)="pressedMuito()">
+        <img src="assets/thumbnails/ogjoseph_Thumbnail.png" class="hoverBorder" (click)="pressedOgjoseph()">
+        <img src="assets/thumbnails/ovanilla_Thumbnail.png" class="hoverBorder" (click)="pressedOvanilla()">
     </div>
     <div style="position:absolute; left: 840px; top: 746px;  z-index:2" class="">
-        <img src="assets/thumbnails/popyzera_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/questi_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/slain_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/smoovesaiyan_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/spiritmoon_Thumbnail.png" class="hoverBorder">
+        <img src="assets/thumbnails/popyzera_Thumbnail.png" class="hoverBorder" (click)="pressedPopyzera()">
+        <img src="assets/thumbnails/questi_Thumbnail.png" class="hoverBorder" (click)="pressedQuesti()">
+        <img src="assets/thumbnails/slain_Thumbnail.png" class="hoverBorder" (click)="pressedSlain()">
+        <img src="assets/thumbnails/smoovesaiyan_Thumbnail.png" class="hoverBorder" (click)="pressedSmooveSaiyan()">
+        <img src="assets/thumbnails/spiritmoon_Thumbnail.png" class="hoverBorder" (click)="pressedSpiritmoon()">
     </div>
     <div style="position:absolute; left: 924px; top: 910px; z-index:2" class="">
-        <img src="assets/thumbnails/summerskin_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/tiffie44_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/titanium_Thumbnail.png" class="hoverBorder">
-        <img src="assets/thumbnails/zull_Thumbnail.png" class="hoverBorder">
+        <img src="assets/thumbnails/summerskin_Thumbnail.png" class="hoverBorder" (click)="pressedSummerskin()">
+        <img src="assets/thumbnails/tiffie44_Thumbnail.png" class="hoverBorder" (click)="pressedTiffie44()">
+        <img src="assets/thumbnails/titanium_Thumbnail.png" class="hoverBorder" (click)="pressedTitanium()">
+        <img src="assets/thumbnails/zull_Thumbnail.png" class="hoverBorder" (click)="pressedZull()">
+    </div>
+
+    <div style="position:absolute; left: 145px; top: 989px; z-index: 2">
+        <p style="font-size: 50px; font-variant: small-caps; font-weight: 700; color: white; text-shadow: 2px 2px 25px black; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: black;">{{charIGN}}</p>
     </div>
 </div>
