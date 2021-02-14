@@ -48,6 +48,12 @@ export class AppComponent  {
 
   charIGN: string = '';
 
+  randMethod = ['pressedAndromeia', 'pressedAntisora99', 'pressedAswraith', 'pressedDrewzerr', 'pressedDumberto',
+  'pressedEskimo', 'pressedGiucci', 'pressedGodspath', 'pressedHermitnobb', 'pressedHeyitssunny', 'pressedImsteven',
+  'pressedInstablade', 'pressedJenntart', 'pressedJesses', 'pressedJulian', 'pressedMuito', 'pressedOgjoseph', 'pressedOvanilla',
+  'pressedPopyzera', 'pressedQuesti', 'pressedSlain', 'pressedSmooveSaiyan', 'pressedSpiritmoon', 'pressedSummerskin',
+  'pressedTiffie44', 'pressedTitanium', 'pressedZull']
+
   pressedAndromeia() {
     //change style to perma hover effect on andromeia
 
@@ -1219,6 +1225,6 @@ export class AppComponent  {
   }
 
   pressedRuin() {
-    console.log('hiii');
+    this[this.randMethod[Math.floor(Math.random() * this.randMethod.length)]]();
   }
 }
