@@ -37,44 +37,46 @@
     <img src="assets/icons/icon_Warrior.png" style="z-index:2; position: absolute; left:65px; top: 991px" *ngIf="booWarrior">
     <img src="assets/icons/concernedpolitoed.png" style="z-index:2; position: absolute; left:65px; top: 991px" *ngIf="booPolitoed">
 
-    <div style="position:absolute; left: 840px; top: 90px; z-index:2" class="">
-        <img src="assets/thumbnails/andromeia_Thumbnail.png" class="hoverBorder" (click)="pressedAndromeia()">
-        <img src="assets/thumbnails/antisora99_Thumbnail.png" class="hoverBorder" (click)="pressedAntisora99()">
-        <img src="assets/thumbnails/aswraith_Thumbnail.png" class="hoverBorder" (click)="pressedAswraith()">
-        <img src="assets/thumbnails/drewzerr_Thumbnail.png" class="hoverBorder" (click)="pressedDrewzerr()">
-        <img src="assets/thumbnails/dumberto_Thumbnail.png" class="hoverBorder" (click)="pressedDumberto()">
+    <img src="assets/icons/ruin.png" style="z-index: 2; position: absolute; left:1626px; top:935px;" class="hoverBorder" (click)="pressedRuin()">
+
+    <div style="position:absolute; left: 840px; top: 90px; z-index:2">
+        <img src="assets/thumbnails/andromeia_Thumbnail.png" [ngClass]="booAndromeia?'shadowEffect':'hoverBorder'" (click)="pressedAndromeia()">
+        <img src="assets/thumbnails/antisora99_Thumbnail.png" [ngClass]="booAntisora99?'shadowEffect':'hoverBorder'" (click)="pressedAntisora99()">
+        <img src="assets/thumbnails/aswraith_Thumbnail.png" [ngClass]="booAswraith?'shadowEffect':'hoverBorder'" (click)="pressedAswraith()">
+        <img src="assets/thumbnails/drewzerr_Thumbnail.png" [ngClass]="booDrewzerr?'shadowEffect':'hoverBorder'" (click)="pressedDrewzerr()">
+        <img src="assets/thumbnails/dumberto_Thumbnail.png" [ngClass]="booDumberto||booDumbertoRandom?'shadowEffect':'hoverBorder'" (click)="pressedDumberto()">
     </div>
-    <div style="position:absolute; left: 924px; top: 254px; z-index:2" class="">
-        <img src="assets/thumbnails/eskimo_Thumbnail.png" class="hoverBorder" (click)="pressedEskimo()">
-        <img src="assets/thumbnails/giucci_Thumbnail.png" class="hoverBorder" (click)="pressedGiucci()">
-        <img src="assets/thumbnails/godspath_Thumbnail.png" class="hoverBorder" (click)="pressedGodspath()">
-        <img src="assets/thumbnails/hermitnobb_Thumbnail.png" class="hoverBorder" (click)="pressedHermitnobb()">
+    <div style="position:absolute; left: 924px; top: 254px; z-index:2">
+        <img src="assets/thumbnails/eskimo_Thumbnail.png" [ngClass]="booEskimo?'shadowEffect':'hoverBorder'" (click)="pressedEskimo()">
+        <img src="assets/thumbnails/giucci_Thumbnail.png" [ngClass]="booGiucci?'shadowEffect':'hoverBorder'" (click)="pressedGiucci()">
+        <img src="assets/thumbnails/godspath_Thumbnail.png" [ngClass]="booGodspath?'shadowEffect':'hoverBorder'" (click)="pressedGodspath()">
+        <img src="assets/thumbnails/hermitnobb_Thumbnail.png" [ngClass]="booHermitknob||booHermitknobRandom?'shadowEffect':'hoverBorder'" (click)="pressedHermitnobb()">
     </div>
-    <div style="position:absolute; left: 840px; top: 418px;  z-index:2" class="">
-        <img src="assets/thumbnails/heyitssunny_Thumbnail.png" class="hoverBorder" (click)="pressedHeyitssunny()">
-        <img src="assets/thumbnails/imsteven_Thumbnail.png" class="hoverBorder" (click)="pressedImsteven()">
-        <img src="assets/thumbnails/instablade_Thumbnail.png" class="hoverBorder" (click)="pressedInstablade()">
-        <img src="assets/thumbnails/jenntart_Thumbnail.png" class="hoverBorder" (click)="pressedJenntart()">
-        <img src="assets/thumbnails/jesses_Thumbnail.png" class="hoverBorder" (click)="pressedJesses()">
+    <div style="position:absolute; left: 840px; top: 418px;  z-index:2">
+        <img src="assets/thumbnails/heyitssunny_Thumbnail.png" [ngClass]="booHeyitssunny?'shadowEffect':'hoverBorder'" (click)="pressedHeyitssunny()">
+        <img src="assets/thumbnails/imsteven_Thumbnail.png" [ngClass]="booImSteven?'shadowEffect':'hoverBorder'" (click)="pressedImsteven()">
+        <img src="assets/thumbnails/instablade_Thumbnail.png" [ngClass]="booInstablade?'shadowEffect':'hoverBorder'" (click)="pressedInstablade()">
+        <img src="assets/thumbnails/jenntart_Thumbnail.png" [ngClass]="booJenntart?'shadowEffect':'hoverBorder'" (click)="pressedJenntart()">
+        <img src="assets/thumbnails/jesses_Thumbnail.png" [ngClass]="booJesses?'shadowEffect':'hoverBorder'" (click)="pressedJesses()">
     </div>
-    <div style="position:absolute; left: 924px; top: 582px;  z-index:2" class="">
-        <img src="assets/thumbnails/julian_Thumbnail.png" class="hoverBorder" (click)="pressedJulian()">
-        <img src="assets/thumbnails/muito_Thumbnail.png" class="hoverBorder" (click)="pressedMuito()">
-        <img src="assets/thumbnails/ogjoseph_Thumbnail.png" class="hoverBorder" (click)="pressedOgjoseph()">
-        <img src="assets/thumbnails/ovanilla_Thumbnail.png" class="hoverBorder" (click)="pressedOvanilla()">
+    <div style="position:absolute; left: 924px; top: 582px;  z-index:2">
+        <img src="assets/thumbnails/julian_Thumbnail.png" [ngClass]="booJulian?'shadowEffect':'hoverBorder'" (click)="pressedJulian()">
+        <img src="assets/thumbnails/muito_Thumbnail.png" [ngClass]="booMuito?'shadowEffect':'hoverBorder'" (click)="pressedMuito()">
+        <img src="assets/thumbnails/ogjoseph_Thumbnail.png" [ngClass]="booOgjoseph?'shadowEffect':'hoverBorder'" (click)="pressedOgjoseph()">
+        <img src="assets/thumbnails/ovanilla_Thumbnail.png" [ngClass]="booOvanilla?'shadowEffect':'hoverBorder'" (click)="pressedOvanilla()">
     </div>
-    <div style="position:absolute; left: 840px; top: 746px;  z-index:2" class="">
-        <img src="assets/thumbnails/popyzera_Thumbnail.png" class="hoverBorder" (click)="pressedPopyzera()">
-        <img src="assets/thumbnails/questi_Thumbnail.png" class="hoverBorder" (click)="pressedQuesti()">
-        <img src="assets/thumbnails/slain_Thumbnail.png" class="hoverBorder" (click)="pressedSlain()">
-        <img src="assets/thumbnails/smoovesaiyan_Thumbnail.png" class="hoverBorder" (click)="pressedSmooveSaiyan()">
-        <img src="assets/thumbnails/spiritmoon_Thumbnail.png" class="hoverBorder" (click)="pressedSpiritmoon()">
+    <div style="position:absolute; left: 840px; top: 746px;  z-index:2">
+        <img src="assets/thumbnails/popyzera_Thumbnail.png" [ngClass]="booPopyzera?'shadowEffect':'hoverBorder'" (click)="pressedPopyzera()">
+        <img src="assets/thumbnails/questi_Thumbnail.png" [ngClass]="booQuesti?'shadowEffect':'hoverBorder'" (click)="pressedQuesti()">
+        <img src="assets/thumbnails/slain_Thumbnail.png" [ngClass]="booSlain?'shadowEffect':'hoverBorder'" (click)="pressedSlain()">
+        <img src="assets/thumbnails/smoovesaiyan_Thumbnail.png" [ngClass]="booSmooveSaiyan?'shadowEffect':'hoverBorder'" (click)="pressedSmooveSaiyan()">
+        <img src="assets/thumbnails/spiritmoon_Thumbnail.png" [ngClass]="booSpiritmoon?'shadowEffect':'hoverBorder'" (click)="pressedSpiritmoon()">
     </div>
-    <div style="position:absolute; left: 924px; top: 910px; z-index:2" class="">
-        <img src="assets/thumbnails/summerskin_Thumbnail.png" class="hoverBorder" (click)="pressedSummerskin()">
-        <img src="assets/thumbnails/tiffie44_Thumbnail.png" class="hoverBorder" (click)="pressedTiffie44()">
-        <img src="assets/thumbnails/titanium_Thumbnail.png" class="hoverBorder" (click)="pressedTitanium()">
-        <img src="assets/thumbnails/zull_Thumbnail.png" class="hoverBorder" (click)="pressedZull()">
+    <div style="position:absolute; left: 924px; top: 910px; z-index:2">
+        <img src="assets/thumbnails/summerskin_Thumbnail.png" [ngClass]="booSummerskin?'shadowEffect':'hoverBorder'" (click)="pressedSummerskin()">
+        <img src="assets/thumbnails/tiffie44_Thumbnail.png" [ngClass]="booTiffie44?'shadowEffect':'hoverBorder'" (click)="pressedTiffie44()">
+        <img src="assets/thumbnails/titanium_Thumbnail.png" [ngClass]="booTitanium?'shadowEffect':'hoverBorder'" (click)="pressedTitanium()">
+        <img src="assets/thumbnails/zull_Thumbnail.png" [ngClass]="booZull?'shadowEffect':'hoverBorder'" (click)="pressedZull()">
     </div>
 
     <div style="position:absolute; left: 145px; top: 989px; z-index: 2">

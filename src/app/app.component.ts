@@ -1217,4 +1217,8 @@ export class AppComponent  {
     this.booWarrior = true;
     this.booPolitoed = false;
   }
+
+  pressedRuin() {
+    console.log('hiii');
+  }
 }
